@@ -14,7 +14,10 @@ fn main() {
     let x = 5;
     let x = x + 1; // x is now 6
 
-    println!("{0}, {1}, {2}, {3}", some_person_age, my_son_age, SCORE_LIMIT, x);
+    println!(
+        "{0}, {1}, {2}, {3}",
+        some_person_age, my_son_age, SCORE_LIMIT, x
+    );
 
     eprintln!("This is an error!!");
 }

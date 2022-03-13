@@ -14,10 +14,13 @@ fn main() {
 
     println!(
         "{} of {:b} people know binary, the other half doesn't",
-        1, 2
+        1, 1498
     );
 
     // You can right-align text with a specified width. This will output
     // "     1". 5 white space and a "1".
-    println!("{number:width$}", number = 1, width = 5);
+    println!("{number:>width$}", number = 1, width = 5);
+
+    // You can pad numbers with extra zeroes. This will output "000001"
+    println!("{number:0>width$}", number = 1, width = 6);
 }
